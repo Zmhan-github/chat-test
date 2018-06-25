@@ -4,7 +4,7 @@ const form = document.getElementById('form');
 const input = document.getElementById('input');
 
 
-const ws = new WebSocket('ws://localhost:3000');
+const ws = new WebSocket('wss://echo.websocket.org');
 
 function setStatus(value) {
     status.innerHTML = value;
