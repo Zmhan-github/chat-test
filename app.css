@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #333;
     color: #0F0;
     font-family: 'Consolas', monospace;
 }
@@ -17,6 +17,21 @@ header {
     display: flex;
 }
 
+#roomName {
+    border-radius: 5px;
+    background-color: #444;
+    color: tomato;
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    padding: 1em .5em;
+}
+
+#roomName > option {
+    color: white;
+    padding: 0.5em;
+    margin: 20px;
+}
+
 input, label {
     display: block;
 }
@@ -24,6 +39,7 @@ input, label {
 input {
     outline: none;
     border: none;
+    border-radius: 15px;
     background-color: #444;
     color: #0F0;
     padding: 1em .5em;
