@@ -17,6 +17,13 @@ function printMessage(value) {
     messages.appendChild(li);
 }
 
+form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    ws.send(input.value);
+    input.value = '';
+})
+
 ws.onopen = () => setStatus('ONLINE');
 
 ws.onclose = () => setStatus('DISCONNECTED');
